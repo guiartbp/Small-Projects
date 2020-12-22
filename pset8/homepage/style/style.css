@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+
+/* MENU */
+header{
+    height: 10vh;
+}
+.menu{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.social{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #FFF;
+}
+.nav-link{
+    color: #FFF;
+}
+.nav-link:hover{
+    color: #FFF;
+    text-decoration: underline #fff solid;
+}
+.activemenu{
+    text-decoration: underline #fff solid;
+}
+
+/* SOCIAL HOVER */
+.fa-facebook-square:hover{
+    color: #3b5998;
+}
+.fa-instagram-square:hover{
+    color: rgb(161, 51, 165);
+}
+.fa-youtube-square:hover{
+    color: rgb(254, 0, 0);
+}
+.fa-pinterest-square:hover{
+    color: rgb(189, 8, 26);
+}
+.center{
+    margin: 0 auto;
+    margin-top:150px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    border: solid 1px #FFF;
+}
+
+
+/* MENU RESPONSIVO - TUTORIAL ROCKETSEAT */
+@media (max-width: 600px){
+    nav, .social {
+        display: none;
+    }
+    .menu{
+        justify-content: flex-end;
+    }
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+    .one,
+    .two,
+    .three{
+        background-color: #FFF;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    /* Full screen */
+    .menu-section.on {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+
+    }
+    .menu-section.on nav {
+        display: block;
+    }
+    .menu-section.on .menu-toggle{
+        position: absolute;
+        right: 0;
+        top: 25px;
+    }
+    .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+    .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul{
+        text-align: center;
+        display: block;
+    }
+    .menu-section.on nav ul a{
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        display: block;
+    }
+    .nav-link:hover{
+        color: #FFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .activemenu{
+        text-decoration: none;
+        font-weight: bold;
+    }
+}

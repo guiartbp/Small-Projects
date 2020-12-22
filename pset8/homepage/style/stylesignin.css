@@ -1,0 +1,60 @@
+.img-signin{
+    background: url(../assets/img/4.bmp);
+    background-size: cover;
+    height: 90vh;
+}
+.blurin{
+    background-color: rgba(0, 0, 0, .7);
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.containerin{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    align-self: center;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-size: 6.0rem;
+    letter-spacing: .3em;
+    color: #CCCCCC;
+}
+form{
+    align-self: center;
+}
+input{
+    position: relative;
+    align-self: center;
+    border: none;
+    outline: none;
+    background: none;
+    color: #CCCCCC;
+}
+input::placeholder,
+input[value]{
+    color: #CCCCCC;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+.inputlogin{
+    width: 100%;
+    max-width: 200px;
+    margin: 15px 0 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #DDD;
+    color: #AAA;
+}
+.submit{
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    color: #AAA;
+    border: 1px solid #DDD;
+}

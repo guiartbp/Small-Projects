@@ -1,0 +1,23 @@
+Abrir o programa com linha de comando
+Se o argumento não for inteiro positivo ou for mais de 1 inteiro positivo:
+    Mensagem de falha: Usage: ./caesar key
+Se o segundo argumento for apenas 1 inteiro positivo
+    Pegue um texto (plaintext: get string)
+
+Coloque o texto na formula: Ci = (Pi + k) % 26
+    Ci = loop
+    Pi = texto[letra]
+    k = inteiro positivo colocado na linha de comando
+Se o texto[i] == lowcase // int tolower(int c);
+    Permaneça == lowcase // int tolower(int c);
+Se o texto[i] == uppercase // int toupper(int c);
+    Permaneça == uppercase // int toupper(int c);
+Reproduza a criptografia
+    plaintext:  hello
+        Ci = (Pi + k) % 26
+        C0 = (p0(h) + 1) % 26 = 8(i)
+        C1 = (p1(e) + 1) % 26 = 5(f)
+        C2 = (p2(l) + 1) % 26 = 12(m)
+        C3 = (p3(l) + 1) % 26 = 12(m)
+        C4 = (p3(o) + 1) % 26 = 15(p)
+    ciphertext: ifmmp

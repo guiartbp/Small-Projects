@@ -1,0 +1,18 @@
+Peça ao usuário um número para altura:
+Se o número não for entre 1 e 8:
+    Volte ao passo 1
+Pegue o número
+Faça uma piramide com o numero
+    loop "For":
+        rode o tanto de vezes que o usuario pediu
+        a cada linha imprima "#" a mais que a anterior
+        #
+        ##
+        ###
+Depois que a piramide estiver na esquerda
+Faça imprimir pontos o tanto de vezes que pediu
+    Se pediu 1
+        0 pontos
+    Se pediu 2
+        1 ponto no primeiro
+        e 0 no segundo

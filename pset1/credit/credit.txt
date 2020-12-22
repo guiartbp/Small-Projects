@@ -1,0 +1,15 @@
+Ler o numero do cartão: get_long
+
+Calcular o checksum
+    Começando pelo penultimo, multiplicar um numero sim outro não por 2
+    Soma todos os digitos dos produtos (2 4 5 12 = 2 + 4 + 5 + 1 + 2)
+    Soma o resultado com os digitos não multiplicados por 2
+    Se a soma ter o digito final = 0 é valido o cartão
+    
+Checar tamanho e iniciais do cartão
+    American Express: 15 digits, starts with 34 or 37;  
+    Visa: 13 or 16 digits, starts with 4
+    MasterCard: 16 digits, starts with 51, 52, 53, 54, or 55;
+    Invalid
+    
+Print bandeira do banco

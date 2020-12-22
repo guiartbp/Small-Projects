@@ -1,0 +1,55 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+input,
+textarea{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    max-width: 430px;
+    color: #676767;
+}
+textarea{
+    padding: 0 10px;
+    resize: none;
+}
+.name,
+.adress,
+.message{
+    width: 100%;
+    max-width: 450px;
+    margin: 30px 0 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #DDD;
+    color: #AAA;
+}
+::placeholder{
+    color: #AAA;
+    line-height: 450%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.submit{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 150px;
+    height: 60px;
+    border: 2px solid #DDD;
+    color: #AAA;
+    text-align: center;
+    padding: 16px 32px;
+    display: flex;
+    align-self: flex-end;
+}
+.fa-share:before{
+    line-height: 150%;
+}
+
+
+@media (max-width: 530px){
+    .textabout h1{
+        font-size: 3rem;
+    }
+}

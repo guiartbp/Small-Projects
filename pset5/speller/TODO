@@ -1,0 +1,116 @@
+// LOAD
+
+Goal
+{
+    Return true
+        if load all dates of hash table
+    Return false
+        if erro memory || file == null
+}
+TODO
+{
+    open dictionary file
+    read strings from file one at a time
+    create a new node for each word
+    hash word to obtain a hash value
+    insert node into hash table that location
+}
+
+How to
+{
+    open dictionary file
+        fopen
+        remember if return is NULL
+
+    read strings from file one at a time
+        fscanf (file, "%s", word)
+        loop for to read each word
+        if fscanf == EOF = END
+
+    create a new node for each word
+        malloc
+        if return NULL
+        copy word with strcpy(node *word, word)
+
+    hash word to obtain a hash value
+        function hash (string)
+            return index;
+
+    insert node into hash table that location
+        list-> next next next
+        new node -> next -> list -> next
+        list -> new node
+
+    repeat
+        fscanf
+        malloc for new word
+        strcpy for new node
+        insert node in list
+        in EOF sucess all dates in memory of hash table
+}
+
+// HASH
+
+Goal
+{
+    Input: word (alphabetical char and apostrophes)
+    Output: index entre 0 and N-1
+    Deterministic
+}
+TODO
+{
+    receber a palavra
+    transformar cada letra em um numero
+
+}
+
+// CHECK
+
+Goal
+{
+    Return true
+        if the word is in the dictionary
+    Case insensitive
+        uppercase || lowercase
+}
+
+TODO
+{
+    Hash word to obtain a hash value
+    Acess linked list at that index in the hash table
+    Traverse linked list, looking for the word(strcasecmp)
+}
+
+How to
+{
+    cursor = cursor->next
+    strcasecmp(cursor->word, head->word)
+    if cursor == NULL -> return false
+
+    start with cursor set to first item in linked list
+        cursor->word = table[N]
+    if word found
+        return true
+    if NULL
+        return false
+}
+
+// UNLOAD
+
+Goal
+{
+    Free for malloc
+        return true
+}
+
+TODO
+{
+        Free (cursor)
+}
+
+How to
+{
+    Create node *tmp = table[N]
+    Mover cursor
+    free tmp
+}
